@@ -4,12 +4,24 @@
 */
 int func(int a) {
   int q = 0;
-  if (a % 2 == 1) {
-    q = a;
+  int s = 0;
+  int w = 0;
+  int t = 0;
+  while (s < a) {
+    s = s + 1;
+    if (s % 2 == 0) {
+      q = q + s;
+    }
   }
-  return q;
+  while (w < a) {
+    w = w + 1;
+    if (w % 2 == 1) {
+      t = t + w;
+    }
+  }
+  return q - t;
 }
 
 void main() {
-  print(func(13));
+  print(func(5));
 }
