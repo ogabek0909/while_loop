@@ -11,9 +11,9 @@ int func(a) {
   while (q < a) {
     q = q + 1;
     if (q % 2 == 1) {
-      s = s + 1;
+      s = s + q;
     } else
-      w += 1;
+      w += q;
   }
 
   if (s > w) {
