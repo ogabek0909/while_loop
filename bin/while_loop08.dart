@@ -8,13 +8,14 @@
 
 String func(int a) {
   int q = 0;
-  int s = 0;
+  String s = '';
   while (q < a) {
-    ++q;
-    if (q % 2 == 1) {}
-    return q.toString();
+    if (q % 2 == 1) {
+      s = s + q.toString();
+    }
+    q++;
   }
-  return q.toString();
+  return s;
 }
 
 void main() {
