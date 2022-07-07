@@ -19,7 +19,7 @@ int func(int a) {
       t = t + w;
     }
   }
-  return q - t;
+  return t - q;
 }
 
 void main() {
