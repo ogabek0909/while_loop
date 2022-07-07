@@ -5,7 +5,7 @@
 int func(int a) {
   int s = 0;
   int q = 0;
-  while (a != 0) {
+  while (a >= 0) {
     s = a % 10;
     if (s % 2 == 1) {
       q = q + 1;
