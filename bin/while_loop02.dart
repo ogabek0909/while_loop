@@ -5,16 +5,17 @@
 int func(int a) {
   int s = 0;
   int q = 0;
-  while (a != 0) {
-    s = a % 10;
-    if (s % 2 == 0) {
-      q = q + 1;
+  while (a > q) {
+    q = q + 1;
+    if (q % 2 == 1) {
+      s += 1;
     }
-    a ~/= 10;
+    // a = a - 1;
+
   }
-  return q;
+  return s;
 }
 
 void main() {
-  print(func(234325));
+  print(func(12));
 }
