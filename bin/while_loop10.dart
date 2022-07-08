@@ -6,17 +6,22 @@
   
   
 */
-import 'dart:math';
 
 String func(a) {
-  int q = 0;
+  int q = 2;
   int w = 0;
   String s = 'tub son emas';
   String r = 'tub son';
-  if (a.isPrime()) {
-    return r;
-  } else
-    return s;
+  String g = '';
+  while (q < a) {
+    q++;
+    if (a % q == 0) {
+      q++;
+      return s;
+    } else
+      return r;
+  }
+  return '';
 }
 
 void main() {
