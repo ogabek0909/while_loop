@@ -15,7 +15,7 @@ String func(a) {
   String g = '';
   while (q < a) {
     q++;
-    if (a % q == 0) {
+    if (a % q == 0 || a % 2 == 0) {
       q++;
       return s;
     } else
@@ -25,5 +25,5 @@ String func(a) {
 }
 
 void main() {
-  print(func(7));
+  print(func(5));
 }
